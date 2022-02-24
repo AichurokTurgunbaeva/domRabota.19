@@ -2,8 +2,9 @@ package com.company;
 
 public class Hotel extends Buildings implements Rentable{
 
-    public Hotel(String address) {
-        super(address);
+
+    public Hotel(String address, Person[] flats) {
+        super(address, flats);
     }
 
     @Override

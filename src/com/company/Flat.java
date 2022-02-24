@@ -2,8 +2,9 @@ package com.company;
 
 public class Flat extends Buildings implements Payable{
 
-    public Flat(String address) {
-        super(address);
+
+    public Flat(String address, Person[] flats) {
+        super(address, flats);
     }
 
     @Override

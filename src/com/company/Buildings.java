@@ -2,24 +2,23 @@ package com.company;
 
 import java.util.Arrays;
 
-public class Buildings implements Payable {
+public abstract class Buildings {
     private String address;
+    private Person[] flats;
 
-    public Buildings(String address) {
+
+    public Buildings(String address, Person[] flats) {
         this.address = address;
-    }
-    public String getAddress() {
-        return address;
+        this.flats = flats;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     @Override
-    public void toloyt() {
-
+    public String toString() {
+        return "Buildings{" +
+                "address='" + address + '\'' +
+                ", people=" + flats.length +
+                '}';
     }
 }
-
 
